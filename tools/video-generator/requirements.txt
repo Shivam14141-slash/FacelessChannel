@@ -1,0 +1,8 @@
+# Video Generator Tool — dependencies
+# Install with: pip3 install -r requirements.txt
+
+pillow>=10.0.0
+anthropic>=0.40.0
+
+# ffmpeg is required for video_assembler.py but is NOT a pip package.
+# Install via Homebrew: brew install ffmpeg

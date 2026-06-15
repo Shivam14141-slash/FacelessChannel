@@ -1,0 +1,713 @@
+{
+  "sentences_hash": "0b19727832b6d142879ab119db068d9c0b380e0c29020449a465d0f86ff0ea82",
+  "beats": [
+    {
+      "start": 0.27,
+      "end": 0.95,
+      "text": "Look around your room.",
+      "scene_description": "A simple interior room with beige walls, a window showing daylight outside, a desk with a lamp, and a small plant in the corner. A stick-figure character with a round head stands in the center, looking around with a calm, neutral expression."
+    },
+    {
+      "start": 1.07,
+      "end": 6.27,
+      "text": "The walls around you, the light overhead, the air going in and out of your lungs without you ever thinking about it.",
+      "scene_description": "A cozy room interior with pale walls, an overhead light fixture glowing softly, a window with curtains, and furniture. A stick-figure character stands relaxed in the middle, with a small curved line near their mouth suggesting calm breathing. Everything appears still and peaceful."
+    },
+    {
+      "start": 6.31,
+      "end": 9.71,
+      "text": "All of it feels permanent, like the world has always been like this.",
+      "scene_description": "A serene bedroom or living space with solid walls, a steady lamp, a comfortable chair, and framed pictures on the wall. A stick-figure character sits with an expression of contentment and stillness, as if the room around them represents unchanging, eternal calm."
+    },
+    {
+      "start": 9.85,
+      "end": 10.45,
+      "text": "It hasn't.",
+      "scene_description": "The same room as before, but now the stick-figure character has a surprised or questioning expression, with a hand raised to their head, suggesting doubt or realization."
+    },
+    {
+      "start": 10.69,
+      "end": 15.55,
+      "text": "Rewind far enough, and this exact spot becomes a place that would kill you in under a minute.",
+      "scene_description": "A nightmarish landscape of the same location transformed into a hellish, barren wasteland. Jagged grey rocks jut from the ground, and the air shimmers with heat. A small stick-figure character stands in the center looking terrified, with arms raised, surrounded by an inhospitable, alien environment."
+    },
+    {
+      "start": 15.81,
+      "end": 17.09,
+      "text": "There is no air you could breathe.",
+      "scene_description": "A desolate rocky landscape with a thick, murky atmosphere. A stick-figure character stands alone in the center, gasping or choking, with one hand to their throat. The air around them is depicted as toxic or unbreathable, with no oxygen visible."
+    },
+    {
+      "start": 17.25,
+      "end": 21.73,
+      "text": "The ground is literally liquid rock, and the sky glows orange like the inside of a furnace.",
+      "scene_description": "A primordial hellscape with a massive glowing orange-red sky filling the upper half of the frame like a furnace. The ground beneath is molten lava with bright cracks and flowing liquid rock in shades of orange, yellow, and dark red. A tiny stick-figure character stands on a small rocky outcrop in the center, dwarfed by the overwhelming heat and light."
+    },
+    {
+      "start": 22.03,
+      "end": 26.33,
+      "text": "For more than 99% of this planet's existence, nothing remotely like you was here.",
+      "scene_description": "A vast, empty primordial Earth landscape stretching to the horizon under a purple-grey sky. Barren rocky terrain with no signs of life or habitation. A small stick-figure character stands alone in the distance, looking insignificant against the alien, lifeless landscape."
+    },
+    {
+      "start": 26.53,
+      "end": 30.03,
+      "text": "Earth got along just fine without us for four and a half billion years.",
+      "scene_description": "A sweeping view of prehistoric Earth with a large glowing sun in the sky, primitive landmasses, vast oceans, and clouds. A tiny stick-figure character is barely visible in the corner, emphasizing human absence from this ancient world."
+    },
+    {
+      "start": 30.23,
+      "end": 35.75,
+      "text": "Something was ruling the planet that entire time, and for almost all of it, it was nothing you'd recognize.",
+      "scene_description": "A prehistoric landscape with a large dinosaur silhouette (long-necked sauropod or similar) dominating the right side of the frame, against a misty green jungle background with ferns and primitive trees. A small stick-figure character on the left looks up in awe and confusion at the alien creature."
+    },
+    {
+      "start": 36.05,
+      "end": 39.77,
+      "text": "Four and a half billion years is a number your brain simply can't hold.",
+      "scene_description": "A stick-figure character with a confused or overwhelmed expression stands in the center with swirly lines around their head suggesting bewilderment. Large numbers '4.5 BILLION YEARS' float in the space around them in increasingly blurry, hard-to-focus text, representing the incomprehensible scale."
+    },
+    {
+      "start": 39.93,
+      "end": 42.57,
+      "text": "So forget the numbers for a second. Think of it like this.",
+      "scene_description": "A stick-figure character stands with one hand raised in a 'wait' gesture and the other hand pointing forward, with a thinking expression. Around them are fading numbers and equations disappearing like smoke, replaced by empty space and a light background suggesting a mental reset."
+    },
+    {
+      "start": 42.73,
+      "end": 44.57,
+      "text": "Imagine a stadium filled with popcorn.",
+      "scene_description": "A large sports stadium filled to the brim with fluffy white and yellow popcorn overflowing from the seats and field. A tiny stick-figure character stands in the foreground for scale, looking up in amazement at the enormous mountain of popcorn towering above."
+    },
+    {
+      "start": 44.69,
+      "end": 52.27,
+      "text": "If all of that popcorn represented the entire history of Earth, then all of human history would be equal to one single kernel near the top of the pile.",
+      "scene_description": "A massive stadium still filled with popcorn. A stick-figure character points upward at a tiny, barely-visible single popcorn kernel near the very top of the towering pile. The contrast emphasizes the minuscule proportion of human history compared to Earth's vast timeline."
+    },
+    {
+      "start": 52.43,
+      "end": 53.79,
+      "text": "That is how small we actually are.",
+      "scene_description": "A vast empty landscape with a tiny stick figure standing alone in the center, looking insignificant against an enormous sky and horizon stretching endlessly in all directions."
+    },
+    {
+      "start": 53.95,
+      "end": 59.19,
+      "text": "We are a single grain of sand in the whole Sahara Desert, a single drop of water in the entire ocean.",
+      "scene_description": "A split composition: on the left, an endless golden desert landscape with dunes and a tiny speck of sand highlighted in the center; on the right, a vast blue ocean with waves and a single tiny water droplet marked in the middle."
+    },
+    {
+      "start": 59.41,
+      "end": 64.07,
+      "text": "So what would happen if you stepped out onto Earth as it was four and a half billion years ago?",
+      "scene_description": "A stick figure character standing hesitantly at the edge of a barren, hostile landscape, looking uncertain and nervous as they prepare to step forward into the unknown ancient world."
+    },
+    {
+      "start": 64.23,
+      "end": 67.43,
+      "text": "Well, the first thing that happens is, you die. The entire surface is an ocean of lava under a thick orange haze of carbon dioxide.",
+      "scene_description": "A stick figure character stumbling backward with an alarmed expression, surrounded by glowing orange-red lava bubbling and churning across the ground, thick orange haze filling the sky above, with fire and cracks visible in the molten surface."
+    },
+    {
+      "start": 72.29,
+      "end": 74.97,
+      "text": "There's no moon in the sky either. It hasn't formed yet.",
+      "scene_description": "A dark orange-hued sky with thick clouds and haze dominating the upper half, the lava ocean visible below, and a small stick figure looking up at the moonless, hostile sky with no visible celestial body."
+    },
+    {
+      "start": 75.17,
+      "end": 81.09,
+      "text": "A planet about the size of Mars, which scientists named Theia, has just slammed into the young Earth at an angle.",
+      "scene_description": "A dramatic collision scene showing a smaller reddish planet (Theia) striking a larger glowing orange planet (young Earth) at an angle against the black of space, with stars visible in the background and a burst of impact energy at the collision point."
+    },
+    {
+      "start": 81.29,
+      "end": 90.15,
+      "text": "The crash threw an enormous spray of debris into orbit, and over millions of years that debris will slowly clump together into the moon you see in the sky.",
+      "scene_description": "The young Earth with debris and rock fragments scattered in a large ring around it in space, some pieces already beginning to cluster together on the left side of the frame, with stars and darkness in the background and a timeline progression suggested by the gathering debris."
+    },
+    {
+      "start": 90.29,
+      "end": 94.25,
+      "text": "The same impact also knocked the planet over by about 23 degrees.",
+      "scene_description": "A globe-like representation of Earth tilted at an angle against a starry background, with an arrow or line indicating the 23-degree tilt relative to a vertical axis, showing the axis of rotation visually."
+    },
+    {
+      "start": 94.57,
+      "end": 97.91,
+      "text": "And that little tilt is the only reason we have seasons at all.",
+      "scene_description": "A simple diagram showing the tilted Earth in four positions around the sun, representing the four seasons, with the axial tilt clearly visible and the sun on the right side of the frame."
+    },
+    {
+      "start": 98.07,
+      "end": 101.69,
+      "text": "Day one and a slightly different impact would have meant we never happened.",
+      "scene_description": "A stick figure character standing contemplatively on a landscape, with a thought bubble or ghostly faded image above showing an alternate reality Earth where the impact was slightly different, suggesting an alternate timeline where life never emerged."
+    },
+    {
+      "start": 101.93,
+      "end": 105.31,
+      "text": "Once the lava cooled and the first oceans formed, life appeared.",
+      "scene_description": "A transforming landscape showing a cooling grey-brown rocky surface on the left transitioning to a blue ocean on the right, with small hints of primitive life (faint green tint or microscopic shapes) beginning to emerge in the water, under a lighter sky."
+    },
+    {
+      "start": 105.45,
+      "end": 107.95,
+      "text": "But you would not have recognized it as life at all.",
+      "scene_description": "A close-up underwater scene of murky water with tiny, strange-shaped organisms (blobs, rods, spirals) barely visible, with a stick figure peering down in confusion and uncertainty, unable to recognize these primitive forms as living things."
+    },
+    {
+      "start": 108.07,
+      "end": 112.31,
+      "text": "For the next two billion years, this planet belonged to things too small to see.",
+      "scene_description": "A vast empty-looking ocean or primordial landscape under a dim sky, with a stick figure standing alone looking tiny and insignificant, while invisible microscopic organisms fill the environment unseen around them, suggested by faint wisps or coloration in the water."
+    },
+    {
+      "start": 112.51,
+      "end": 117.15,
+      "text": "They were single-celled microbes, a whole living world that was invisible to the naked eye.",
+      "scene_description": "A close-up view of ancient ocean water or wet surface with dozens of tiny translucent spheres and blob-like shapes scattered throughout, representing invisible microbes. The background is a murky blue-green, with one small stick figure in the corner holding a magnifying glass, unable to see the microbes with their naked eye."
+    },
+    {
+      "start": 117.29,
+      "end": 123.37,
+      "text": "There were no plants, no animals, nothing with a face at all, just specks of slime running the entire Earth.",
+      "scene_description": "A barren early Earth landscape with grey rocky terrain, a dark sky, and a vast expanse of muddy water or slime covering the ground. Tiny dots and specks of microbes are visible across the entire surface. No plants, animals, or faces anywhere\u2014just the primitive landscape of slime and rock."
+    },
+    {
+      "start": 123.49,
+      "end": 124.97,
+      "text": "Do not mistake them for primitive.",
+      "scene_description": "A zoomed-in view of a single microbe (drawn as a small glowing sphere with internal structures) floating in murky water, with a small stick figure nearby pointing at it with admiration or respect, emphasizing the microbe's complexity despite its tiny size."
+    },
+    {
+      "start": 125.29,
+      "end": 131.11,
+      "text": "These specks ruled longer than every plant, every animal, and every dinosaur that ever lived combined.",
+      "scene_description": "A timeline-like scene showing a long horizontal stretch of time: on the left, a long period of early Earth with microbes (represented as tiny dots covering the ground), taking up most of the space; on the right, much shorter segments showing green plants, animals, and a dinosaur skeleton\u2014all squeezed into a tiny corner, visually showing the vast difference in duration."
+    },
+    {
+      "start": 131.33,
+      "end": 135.12,
+      "text": "The air back then would have killed you. One breath of it with no oxygen at all, and you'd drop where you stood.",
+      "scene_description": "A stick figure human standing on early Earth's barren surface, gasping and collapsing to the ground with an X expression on their face, surrounded by a murky toxic atmosphere (shown as swirls of yellow-brown gas). The sky above is dark and noxious-looking."
+    },
+    {
+      "start": 135.12,
+      "end": 139.97,
+      "text": "Then those microbes did something that almost ended everything. One breath of it with no oxygen at all, and you'd drop where you stood.",
+      "scene_description": "A microscopic view of a single microbe glowing brightly, with small rays of sunlight (bright yellow lines) hitting it. Tiny arrows point outward from the microbe showing it beginning to release something into the surrounding water, symbolizing the start of photosynthesis."
+    },
+    {
+      "start": 140.25,
+      "end": 141.75,
+      "text": "Some of them learned to eat sunlight.",
+      "scene_description": "A cluster of microbes on the ocean floor with bright yellow sunlight rays beaming down through the water above, hitting the microbes directly. The microbes appear to be absorbing or 'eating' the light."
+    },
+    {
+      "start": 141.95,
+      "end": 143.27,
+      "text": "We call it photosynthesis.",
+      "scene_description": "A simple underwater scene with a microbe in the center, bright sun rays coming from above through the water, and small bubbles rising up from the microbe (representing oxygen being released as a byproduct). A label 'photosynthesis' could appear nearby."
+    },
+    {
+      "start": 143.89,
+      "end": 146.55,
+      "text": "Photosynthesis gives off a waste gas, oxygen.",
+      "scene_description": "A microbe releasing tiny oxygen bubbles (shown as small circles) that float upward through the murky water and into the atmosphere above, accumulating in the air as wisps of gas."
+    },
+    {
+      "start": 146.81,
+      "end": 148.67,
+      "text": "To you, oxygen is life.",
+      "scene_description": "A modern-day stick figure human standing on a grassy landscape under a blue sky with clouds and a sun, breathing in deeply and looking healthy and alive, with a smile or neutral content expression."
+    },
+    {
+      "start": 148.97,
+      "end": 152.09,
+      "text": "To almost everything alive back then, it was poison.",
+      "scene_description": "Early Earth landscape with microbes (represented as small dots) collapsing or wilting across the muddy surface as oxygen bubbles (white circles) rain down from a dark sky above, surrounding them like a toxic cloud."
+    },
+    {
+      "start": 152.25,
+      "end": 156.39,
+      "text": "As it built up in the air, it wiped out huge amounts of the life that couldn't handle it.",
+      "scene_description": "An early Earth scene with the atmosphere filling with white and light-blue swirls representing rising oxygen levels. Below, the ground is covered with wilting or dying microbes scattered everywhere, with X's marking the dead ones, showing the mass extinction."
+    },
+    {
+      "start": 156.59,
+      "end": 163.81,
+      "text": "Geologists call this the Great Oxidation Event, which is a very polite name for one of the biggest die-offs the planet has ever seen.",
+      "scene_description": "A dramatic early Earth landscape with a red-orange atmosphere thick with oxygen, dying microbes covering the barren ground, and a small geologist stick figure standing on a rocky outcrop with a clipboard, pointing at the devastation below with a somewhat grim expression."
+    },
+    {
+      "start": 163.91,
+      "end": 165.63,
+      "text": "But the same gas did something else.",
+      "scene_description": "A split scene: on the left, dying microbes and destruction from oxygen; on the right, oxygen molecules beginning to swirl and accumulate in the upper atmosphere, with a faint glow or shimmer suggesting something new forming."
+    },
+    {
+      "start": 165.83,
+      "end": 168.71,
+      "text": "It stripped away the gases that had been trapping the planet's heat.",
+      "scene_description": "A planet surrounded by a thick layer of glowing gases being blown away by powerful solar wind (depicted as streaks of energy). Below, the planet's surface begins to cool, with the atmosphere thinning visibly. A small stick figure stands on the surface, looking concerned."
+    },
+    {
+      "start": 168.89,
+      "end": 174.69,
+      "text": "And without them, the whole thing froze over, very possibly from pole to pole, into a single ball of ice.",
+      "scene_description": "A massive spherical planet entirely covered in white ice and snow against a dark starry background. Icy glaciers and frozen peaks cover the entire visible surface from top to bottom. A tiny stick figure stands on the frozen surface, shivering."
+    },
+    {
+      "start": 174.87,
+      "end": 181.67,
+      "text": "So the air sitting in your lungs right now is the leftover from a catastrophe, one that nearly wiped out the very life that created it.",
+      "scene_description": "A side profile of a stick figure's head with lungs visible inside, depicted simply. Around them, the frozen ice planet looms in the background with small microorganisms barely visible beneath the ice. The scene conveys the connection between past catastrophe and present breath."
+    },
+    {
+      "start": 181.77,
+      "end": 183.21,
+      "text": "Life clung on under the ice.",
+      "scene_description": "A cross-section view of thick ice with a dark ocean beneath it. Tiny microscopic organisms (shown as small dots and squiggles) cluster together in the water under the ice, surviving in pockets of liquid."
+    },
+    {
+      "start": 183.43,
+      "end": 187.87,
+      "text": "But for more than a billion years after that, the biggest thing alive was still microscopic.",
+      "scene_description": "A close-up microscopic view of ancient ocean water with various tiny single-celled organisms floating around\u2014bacteria, simple algae, and proto-cells rendered as tiny dots, spirals, and simple shapes. The composition emphasizes their extreme smallness."
+    },
+    {
+      "start": 188.37,
+      "end": 196.39,
+      "text": "Then, a little over half a billion years ago, in a burst called the Cambrian Explosion, life suddenly got big, and weird, and fast.",
+      "scene_description": "An underwater ocean scene suddenly filling with visible creatures of bizarre shapes\u2014trilobites, anomalocarid predators, simple arthropods, and strange segmented animals in silhouette. The scene is dynamic and crowded, with creatures swimming and crawling in multiple directions to convey rapid evolutionary change."
+    },
+    {
+      "start": 196.61,
+      "end": 199.91,
+      "text": "For the first time, the oceans filled with creatures you could actually see.",
+      "scene_description": "A sunlit underwater ocean scene with various visible sea creatures\u2014fish-like animals, segmented creatures, jellyfish-like forms, and corals\u2014swimming and floating throughout. A stick figure stands on shore in the background, looking out at the thriving ocean in wonder."
+    },
+    {
+      "start": 200.11,
+      "end": 203.23,
+      "text": "Plants crept out onto bare rock and built the first soil.",
+      "scene_description": "A rocky shoreline with bare grey stone meeting the ocean. Simple green plant-like shapes and early moss are spreading across the rocks, with darker brown soil beginning to accumulate in patches. A small stick figure stands observing, pointing at the green growth."
+    },
+    {
+      "start": 203.43,
+      "end": 205.93,
+      "text": "Then, fish in the shallows slowly grew legs.",
+      "scene_description": "A shallow water scene where a fish-like creature with primitive leg-like fins is pulling itself partially out of the water onto wet rock. Other simpler fish remain in the water behind it. The transition from fins to limbs is shown in the creature's body."
+    },
+    {
+      "start": 206.17,
+      "end": 209.69,
+      "text": "And the first uneasy animals hauled themselves up onto dry land.",
+      "scene_description": "A rocky shoreline with a primitive four-legged creature (lizard-like) awkwardly climbing up from shallow water onto dry land. Other creatures of similar form follow behind it. A stick figure stands in the distance, watching these first land animals with amazement."
+    },
+    {
+      "start": 209.99,
+      "end": 210.71,
+      "text": "Forests rose.",
+      "scene_description": "A landscape suddenly filled with tall trees rising up from the ground, creating a dense forest silhouette against a bright sky. The trees are simple shapes, with darker trunks and lighter green canopies filling much of the frame."
+    },
+    {
+      "start": 211.01,
+      "end": 212.89,
+      "text": "Swamps spread for thousands of miles.",
+      "scene_description": "A vast swampy landscape with water, mud, and dense vegetation stretching to the horizon. Cypress-like trees stand in water, tangled plants and vines fill the composition, and the sky is overcast. The scene conveys the enormous scale of spreading swampland."
+    },
+    {
+      "start": 213.13,
+      "end": 217.65,
+      "text": "The coal we dig up and burn today is the buried remains of those exact forests.",
+      "scene_description": "A split scene: the top half shows ancient swamp forests with tall trees and vegetation; the bottom half shows underground layers of dark coal beneath the surface. A simple mining operation with a stick figure digging or extracting coal connects the two halves, illustrating the transformation of ancient life into modern fuel."
+    },
+    {
+      "start": 217.95,
+      "end": 224.25,
+      "text": "After four billion years of fire, ice, and poison, Earth was finally green, and warm, and alive.",
+      "scene_description": "A lush Earth landscape at sunset or sunrise with green forests, blue oceans, white clouds, and golden sunlight. A verdant planet filled with life\u2014trees, animals, plants\u2014all thriving under a warm, bright sky. A small stick figure stands peacefully amid the thriving nature, arms outstretched in relief or wonder."
+    },
+    {
+      "start": 224.39,
+      "end": 225.67,
+      "text": "And then it tried to die again.",
+      "scene_description": "The same lush green planet from the previous scene, but now darkening\u2014storm clouds gathering, smoke rising from volcanic activity, or light beginning to fade. A menacing atmosphere creeps in, suggesting danger to the thriving world. A stick figure on the surface looks up with concern."
+    },
+    {
+      "start": 225.85,
+      "end": 228.17,
+      "text": "This is where the world gets genuinely alien.",
+      "scene_description": "A barren, otherworldly landscape under a slightly greenish sky. Strange rock formations and unfamiliar terrain stretch across the horizon. A small stick-figure character stands in the center, looking around with a surprised expression."
+    },
+    {
+      "start": 228.39,
+      "end": 233.79,
+      "text": "Picture Earth around 260 million years ago, long before a single dinosaur exists.",
+      "scene_description": "An ancient Earth landscape with a sun in the sky, bare rocky terrain, and primitive plant life. The ground is covered with low-lying flora, and the overall palette is muted greens and browns. A small stick-figure observer stands on a hill, gazing at this primordial world."
+    },
+    {
+      "start": 233.97,
+      "end": 239.51,
+      "text": "The days are shorter here, only about 22 hours long, because the planet is spinning faster than it does today.",
+      "scene_description": "A spinning Earth shown from space against a starry background, tilted to show motion. The planet rotates noticeably, and a small clock face or sun position marking on the side indicates a shorter day cycle. A tiny stick figure floats nearby for scale, watching."
+    },
+    {
+      "start": 239.73,
+      "end": 243.33,
+      "text": "And the thing in charge isn't a dinosaur. Dinosaurs don't exist yet.",
+      "scene_description": "An empty, desolate ancient landscape under a pale sky with sparse vegetation. The foreground shows barren ground with no large creatures visible. A single small stick figure stands looking across the empty terrain, emphasizing the absence of dominant animals."
+    },
+    {
+      "start": 243.41,
+      "end": 246.09,
+      "text": "It's something older, and arguably worse.",
+      "scene_description": "A dramatic silhouette of a large predator creature against a reddish sky, its menacing shape looming over a barren landscape. The creature's outline is imposing and unfamiliar, casting a shadow across the rocky ground below."
+    },
+    {
+      "start": 246.29,
+      "end": 251.47,
+      "text": "They were called Gorgonopsids, and they were among the very first animals on Earth to grow saber-teeth.",
+      "scene_description": "A close-up front view of a Gorgonopsid's head and snarling face, showing prominent curved saber-teeth extending downward from the upper jaw. The creature's reptilian features and menacing expression dominate the frame against a simple natural background."
+    },
+    {
+      "start": 251.61,
+      "end": 262.99,
+      "text": "The biggest of them was a monster called Inostrinsevia, which is basically the scientific name for a bear-sized killing machine, with curved fangs as long as your hand, built to slice straight through flesh.",
+      "scene_description": "A large bear-sized Inostrinsevia stalks across a rocky ancient landscape, its muscular body and massive curved fangs dominating the composition. The creature moves with predatory grace, its fangs clearly visible and menacing. A small plant-eating creature cowers in the distance."
+    },
+    {
+      "start": 263.19,
+      "end": 267.37,
+      "text": "For a long stretch of this world, if you were a plant-eater, it didn't matter how big you grew.",
+      "scene_description": "A large herbivorous creature, much bigger than a modern animal, grazes nervously on primitive vegetation across an ancient landscape. The creature's size is emphasized against the rocky terrain and sparse plants."
+    },
+    {
+      "start": 267.51,
+      "end": 268.97,
+      "text": "One of these things was waiting for you.",
+      "scene_description": "A Gorgonopsid predator emerges from behind a rocky outcrop, stalking toward the herbivore in the middle distance. The herbivore reacts with alarm, its body tensing. The landscape is rocky and desolate under a pale sky."
+    },
+    {
+      "start": 269.19,
+      "end": 271.49,
+      "text": "Strangely, the safest place to be was underwater.",
+      "scene_description": "An underwater scene showing a calm shallow sea with sunlight filtering down from above. Small fish and simple marine creatures swim peacefully through the blue water. The seafloor is visible below with rocks and primitive aquatic plants. No large predators are visible."
+    },
+    {
+      "start": 271.69,
+      "end": 276.11,
+      "text": "The seas back then were calm, and mostly free of anything big enough to hurt you.",
+      "scene_description": "A serene underwater landscape with gentle rays of sunlight streaming down through calm water. Small creatures swim lazily through the peaceful blue sea. The water is clear and tranquil, with a sandy or rocky bottom visible below."
+    },
+    {
+      "start": 276.29,
+      "end": 278.53,
+      "text": "On land, there were no breaks at all.",
+      "scene_description": "A tense land scene showing a plant-eating creature running in panic across a rocky landscape, with a pursuing predator visible in the background. The sky is dimly lit, and the terrain is barren and hostile. The mood is one of constant danger and predation."
+    },
+    {
+      "start": 278.73,
+      "end": 281.55,
+      "text": "And then came the closest call life on Earth has ever had.",
+      "scene_description": "A darkening sky with ominous clouds gathering over an ancient landscape. Creatures below look up anxiously, sensing an impending catastrophe. The atmosphere is tense and foreboding, with the landscape appearing fragile and vulnerable."
+    },
+    {
+      "start": 281.75,
+      "end": 293.35,
+      "text": "Around 252 million years ago, a region of what's now Siberia tore open and stayed open, pouring out lava across an area the size of Western Europe, on and off for hundreds of thousands of years.",
+      "scene_description": "A massive volcanic eruption scene with enormous cracks splitting open a landscape, fountains of lava shooting upward, and molten rock flowing across a vast barren terrain. The sky is filled with volcanic ash and smoke. Small creatures flee from the devastation. The scale of destruction is overwhelming."
+    },
+    {
+      "start": 293.61,
+      "end": 297.33,
+      "text": "It pumped so much carbon dioxide into the air that the whole planet roasted.",
+      "scene_description": "A planet Earth filling most of the frame, glowing red-orange with heat, surrounded by thick brown-grey clouds of carbon dioxide. The surface is cracked and steaming, with a small stick-figure character standing on the ground below looking up in distress at the hellish sky."
+    },
+    {
+      "start": 297.65,
+      "end": 301.87,
+      "text": "The oceans heated toward bathwater temperatures, and the oxygen in the sea crashed.",
+      "scene_description": "A cross-section of ocean with the water shown in hot orange-red tones instead of normal blue. Dead fish and marine creatures float lifelessly throughout the water. The sky above is hazy and brown. A small stick figure stands on shore looking horrified at the lifeless, steaming sea."
+    },
+    {
+      "start": 302.03,
+      "end": 306.89,
+      "text": "By the time it finally ended, the overwhelming majority of species on Earth were simply gone.",
+      "scene_description": "A barren, desolate landscape with cracked grey earth, a few dead skeletal trees, and scattered bones and fossils on the ground. The sky is dark and empty. A single small stick-figure character stands alone in the middle of the wasteland, looking small and surrounded by emptiness."
+    },
+    {
+      "start": 307.05,
+      "end": 309.67,
+      "text": "By some estimates, as many as 9 in every 10.",
+      "scene_description": "A simple visual showing ten small circles representing species, with nine of them greyed out or faded and only one remaining bright. A stick figure points at this stark ratio with a shocked expression."
+    },
+    {
+      "start": 309.79,
+      "end": 312.47,
+      "text": "This is the event geologists call the Great Dying.",
+      "scene_description": "A desolate grey-brown landscape under a dark sky, with scattered bones and fossilized remains embedded in the ground. The words 'THE GREAT DYING' appear as a simple text label across the barren scene, with a small stick figure standing solemnly among the remnants."
+    },
+    {
+      "start": 312.71,
+      "end": 314.97,
+      "text": "Life did not recover in a few thousand years.",
+      "scene_description": "A flat, empty grey landscape under a grey sky, with no vegetation or animals visible. A small stick figure stands looking out at the endless barren plains, with a timeline or passage-of-time sense conveyed by the stillness and emptiness stretching across the frame."
+    },
+    {
+      "start": 315.13,
+      "end": 319.47,
+      "text": "It came within a hair of ending altogether, and it stayed broken for a very long time.",
+      "scene_description": "A mostly empty, lifeless grey landscape with only a single tiny green sprout or blade of grass barely visible among the rocks and dust. A stick figure stands nearby, looking down at this last fragile sign of life with a mix of hope and fragility evident in their posture."
+    },
+    {
+      "start": 319.65,
+      "end": 322.95,
+      "text": "Recovery, when it came, arrived in the strangest possible form.",
+      "scene_description": "A transitional landscape: the left side still barren and grey, the right side beginning to show green growth and moisture. A stick figure stands in the middle, looking toward the green side with curiosity and wonder as if sensing change approaching."
+    },
+    {
+      "start": 323.37,
+      "end": 323.65,
+      "text": "Rain.",
+      "scene_description": "A simple scene showing rain falling from dark clouds, with water droplets visible streaking downward. The ground below is wet and glistening. A small stick figure looks up at the rain with an expression of awe or surprise."
+    },
+    {
+      "start": 324.01,
+      "end": 327.89,
+      "text": "Starting around 234 million years ago, the skies opened.",
+      "scene_description": "Dark storm clouds fill the upper half of the frame, with heavy rain pouring down dramatically. The ground is wet and flooded. A small stick figure stands below, exposed to the downpour, with one arm raised as rain falls around them."
+    },
+    {
+      "start": 328.11,
+      "end": 331.11,
+      "text": "And then they simply kept going for about 2 million years.",
+      "scene_description": "A landscape transformed by constant rain: puddles and streams everywhere, dark storm clouds covering the sky, rain streaking downward. The passage of time is suggested by the accumulation of water. A small stick figure stands in the flooded landscape looking exhausted or resigned to the endless rain."
+    },
+    {
+      "start": 331.37,
+      "end": 335.63,
+      "text": "A world that had been hot and bone dry turned into a planet of constant storms.",
+      "scene_description": "A dramatic landscape with heavy rain pouring down, lightning flashing in dark clouds, and wet muddy ground. What was once barren is now flooded and soaked. A stick figure stands on higher ground, watching the storm rage across the transformed world below."
+    },
+    {
+      "start": 335.79,
+      "end": 341.77,
+      "text": "In that soggy, transformed landscape, a group of animals that had been minor background players finally got their shot.",
+      "scene_description": "A wet, rainy landscape with green plants beginning to grow, puddles and streams covering the ground, and rain falling from grey clouds. A small dinosaur figure stands prominently in the foreground, with other smaller animal shapes (lizards, early mammals) visible but in the background, suggesting the dinosaurs were becoming more prominent."
+    },
+    {
+      "start": 341.91,
+      "end": 345.83,
+      "text": "At the start of all that rain, dinosaurs were maybe 5% of the land animals.",
+      "scene_description": "A wet forest scene with rain falling. One dinosaur stands in the foreground, while around it are many other small animals (mammals, lizards, insects) \u2014 the dinosaur is clearly outnumbered and small in relation to the total population of creatures visible in the soggy landscape."
+    },
+    {
+      "start": 346.01,
+      "end": 348.67,
+      "text": "By the time it stopped, they were more than 90%.",
+      "scene_description": "A lush, wet landscape with rain still falling but beginning to ease, now filled with multiple large dinosaurs of different sizes dominating the scene, while tiny other animals are barely visible in the background. The dinosaurs are clearly the dominant creatures now in this transformed world."
+    },
+    {
+      "start": 348.67,
+      "end": 353.79,
+      "text": "The rain didn't just refill the rivers, it handed the entire planet over to the dinosaurs.",
+      "scene_description": "A lush prehistoric landscape with rivers flowing through green vegetation, a bright sun overhead, and several dinosaurs of various sizes scattered across the scene\u2014some drinking from the water, others standing tall in the background. Rain is falling gently from above."
+    },
+    {
+      "start": 354.03,
+      "end": 357.37,
+      "text": "And they held onto it for more than 150 million years.",
+      "scene_description": "A vast prehistoric jungle stretching across the landscape, filled with tall trees, ferns, and multiple dinosaurs in different poses\u2014some grazing, some stalking, some in the distance\u2014under a sunny sky. A timeline marker reading '150 MILLION YEARS' appears in the upper corner."
+    },
+    {
+      "start": 357.75,
+      "end": 359.85,
+      "text": "You probably know roughly how their rain ends.",
+      "scene_description": "A peaceful dinosaur scene\u2014a few dinosaurs grazing in a green landscape under a blue sky. One small stick-figure character stands on the ground to the left, looking up with a knowing expression."
+    },
+    {
+      "start": 360.11,
+      "end": 366.73,
+      "text": "66 million years ago, a rock around 10 kilometers wide slammed into the Earth and rewrote the rules in a single afternoon.",
+      "scene_description": "A massive grey asteroid streaking down from the dark sky toward a green Earth below, leaving a bright trail of fire behind it. On impact, a huge explosion of fire and dust erupts from the ground, filling the lower portion of the frame."
+    },
+    {
+      "start": 366.89,
+      "end": 371.93,
+      "text": "The impact threw so much rock and ash into the sky that the sun effectively went out for months.",
+      "scene_description": "A dark, apocalyptic landscape with thick clouds and ash blocking out most of the sky; barely a glimmer of the sun visible through the haze. A silhouette of a dinosaur stands alone on barren, cracked ground below, barely visible in the dim light."
+    },
+    {
+      "start": 372.19,
+      "end": 373.37,
+      "text": "Plants died in the dark.",
+      "scene_description": "A barren, grey landscape covered in dead, wilted plants and trees lying on the ground. No sun visible in the dark grey sky above, and a few dinosaur silhouettes in the distance, also appearing lifeless."
+    },
+    {
+      "start": 373.59,
+      "end": 378.99,
+      "text": "Everything that ate plants starved, and everything that ate those animals starved right behind them.",
+      "scene_description": "A desolate landscape with skeletons and remains of large dinosaurs scattered across the ground, some standing upright but motionless, others collapsed. Dark sky overhead, no vegetation, completely barren."
+    },
+    {
+      "start": 378.99,
+      "end": 380.71,
+      "text": "The giants had no chance.",
+      "scene_description": "A massive dinosaur skeleton\u2014a huge T-Rex or similar giant\u2014collapsed and lifeless on the grey, ash-covered ground, with smaller skeletal remains scattered nearby. The sky is dark and empty."
+    },
+    {
+      "start": 380.97,
+      "end": 389.51,
+      "text": "But the small, furry, frightened little things that could burrow underground, waded out, and eat almost anything crawled through the wreckage and survived.",
+      "scene_description": "A dark, destroyed landscape with broken rocks, dead branches, and debris scattered around. A few small, furry stick-figure creatures (primitive mammals) are shown\u2014one digging into the ground, one wading through water, one huddled near a rock\u2014all small and cautious-looking against the ruins."
+    },
+    {
+      "start": 389.69,
+      "end": 392.11,
+      "text": "Those small, furry survivors were mammals. Your ancestors.",
+      "scene_description": "A close-up of a small, furry mammal-like creature with a round body and simple features, standing alert in a dark cave or burrow, with its eyes wide and aware. The creature looks primitive but determined, with a gentle expression."
+    },
+    {
+      "start": 393.99,
+      "end": 396.29,
+      "text": "And here is the part actually worth sitting with.",
+      "scene_description": "A simple scene of a small stick-figure human sitting on the ground, looking thoughtful with a hand to their chin. Around them, the landscape is plain and quiet, with just a hint of sky above and earth below."
+    },
+    {
+      "start": 396.37,
+      "end": 402.57,
+      "text": "If that asteroid misses, the dinosaurs almost certainly keep running the show, and those little survivors stay small and forgettable forever.",
+      "scene_description": "A split or alternate landscape: on one side, large dinosaurs dominating a lush prehistoric landscape; on the other side (slightly faded or shown as a 'path not taken'), the same landscape but with no asteroid impact visible in the sky. A small stick-figure looks at both scenarios with curiosity."
+    },
+    {
+      "start": 402.77,
+      "end": 404.71,
+      "text": "That rock didn't just end a world.",
+      "scene_description": "The massive asteroid impact crater from above, a huge circular scar in the Earth's surface with ripples of destruction radiating outward, surrounded by ash and smoke. The landscape around it is completely transformed and lifeless."
+    },
+    {
+      "start": 404.85,
+      "end": 406.73,
+      "text": "It opened the only door we ever had.",
+      "scene_description": "A doorway or opening visible in a landscape of ancient ruins and rocks from the asteroid impact. Light streams through the opening, and a small stick-figure human stands facing it, ready to step through into a new, uncertain future."
+    },
+    {
+      "start": 406.89,
+      "end": 411.99,
+      "text": "The single worst day in the history of large life on Earth is the entire reason you exist.",
+      "scene_description": "A dramatic scene split in two: on the left, a massive asteroid impact with a huge explosion and shockwave across a landscape, and on the right, a small stick-figure character standing peacefully, connected to the chaos by a thin line suggesting consequence and cause."
+    },
+    {
+      "start": 412.21,
+      "end": 414.63,
+      "text": "Even then, we very nearly didn't make it.",
+      "scene_description": "A precarious scene with a small stick figure balanced on the edge of a cliff, looking down at darkness below, with one foot nearly slipping off the edge. The figure's expression shows tension and relief mixed together."
+    },
+    {
+      "start": 414.75,
+      "end": 421.21,
+      "text": "When our own species, Homo sapiens, finally appeared around 300,000 years ago, we were not the only humans alive.",
+      "scene_description": "A prehistoric landscape with five different stick-figure characters standing together in a natural setting with trees and grassland. Each figure has a slightly different shape or posture to suggest they are different species of humans. The sun is visible in the sky."
+    },
+    {
+      "start": 421.51,
+      "end": 424.53,
+      "text": "At least four other human species were here at the very same time.",
+      "scene_description": "Four distinct stick figures in a simple landscape, each slightly different in appearance (one taller, one stockier, one with different arm proportions, etc.), standing among rocks and trees. They are positioned at varying distances to suggest a shared world."
+    },
+    {
+      "start": 424.63,
+      "end": 427.83,
+      "text": "Other kinds of people, as real as we are, sharing the same world.",
+      "scene_description": "A panoramic landscape with multiple stick figures scattered across it \u2014 some sitting, some standing, some walking \u2014 among trees, rocks, and grassland. The scene conveys a sense of coexistence and shared territory under an open sky."
+    },
+    {
+      "start": 428.01,
+      "end": 430.53,
+      "text": "Some of them had been around far longer than we had.",
+      "scene_description": "A simple timeline scene showing two stick figures side by side: one on the left labeled with an older/more ancient appearance, standing taller or more established, and one on the right smaller and younger, suggesting the passage of time and relative age."
+    },
+    {
+      "start": 430.67,
+      "end": 435.59,
+      "text": "Today, every single one of them is gone, and we are the only kind of human left standing.",
+      "scene_description": "A modern landscape with a single stick figure standing alone in the center of a vast natural setting \u2014 grassland, distant mountains, and sky. The figure looks around at the empty landscape, emphasizing solitude and the absence of other human species."
+    },
+    {
+      "start": 435.71,
+      "end": 437.67,
+      "text": "We are not the main characters of this story.",
+      "scene_description": "A stick figure standing small and humble in the foreground, with a massive landscape spreading out behind them \u2014 mountains, forests, and sky \u2014 to emphasize their insignificance in the larger scope of Earth's history."
+    },
+    {
+      "start": 437.83,
+      "end": 440.65,
+      "text": "We are the survivors of the survivors of the survivors.",
+      "scene_description": "Three stick figures stacked or positioned in sequence, each slightly smaller or fainter, suggesting layers of survival and ancestry. A dangerous setting with storms, fires, or rough terrain in the background emphasizes the perils overcome."
+    },
+    {
+      "start": 441.03,
+      "end": 442.55,
+      "text": "So look around the room one more time.",
+      "scene_description": "A cozy interior room with furniture, a window, and simple d\u00e9cor. A stick figure stands in the center with a neutral expression, looking around the familiar space."
+    },
+    {
+      "start": 442.67,
+      "end": 445.53,
+      "text": "Everything in it is balanced on top of a stack of disasters.",
+      "scene_description": "A surreal stacked composition showing layers beneath a simple room on top: at the base, a frozen glacial landscape; in the middle, volcanic destruction and extinction events; and on top, the peaceful room with a stick figure inside, all precariously balanced."
+    },
+    {
+      "start": 445.79,
+      "end": 450.99,
+      "text": "A frozen planet, an extinction that almost wiped the board clean, and a rock from space that erased an entire world to make room for yours.",
+      "scene_description": "Three distinct disaster scenes in one image: on the left, a blue-white frozen Earth; in the middle, a landscape with dinosaurs and smoke indicating extinction; on the right, a massive asteroid approaching a planet. Each scene is a visual layer showing catastrophes stacked in time."
+    },
+    {
+      "start": 451.15,
+      "end": 459.15,
+      "text": "Take away any single one of those, and the air never reaches your lungs, and this exact moment never happens.",
+      "scene_description": "A stick figure gasping or breathing, with lungs visible inside their body glowing. Around them, three ghostly/faded images of the three disasters fade in and out, suggesting that without each one, this breathing moment would cease to exist."
+    },
+    {
+      "start": 459.33,
+      "end": 463.41,
+      "text": "The world before us was never a warm -up act, waiting around for humans to show up.",
+      "scene_description": "A prehistoric Earth scene with lush vegetation, primitive creatures, flowing lava, and microbes in the water \u2014 a vibrant, active world. A tiny stick figure in the corner appears insignificant, emphasizing that this world was complete and self-sufficient without humans."
+    },
+    {
+      "start": 463.55,
+      "end": 470.27,
+      "text": "It was four and a half billion years of a planet that did not need us at all, running on lava, and microbes, and monsters, and luck.",
+      "scene_description": "An epic montage showing Earth across deep time: rivers of red lava flowing, tiny microbes in primordial water, a massive dinosaur-like monster, lightning storms, and mountains rising and falling. A label reading \"4.5 BILLION YEARS\" is positioned at the top. No human figures are present, emphasizing the planet's independence."
+    },
+    {
+      "start": 470.45,
+      "end": 471.31,
+      "text": "We are new here.",
+      "scene_description": "A vast cosmic landscape with ancient mountains, distant stars, and swirling nebulae in the background. In the foreground, a tiny stick-figure character stands alone on barren ground, looking small and recently arrived."
+    },
+    {
+      "start": 471.49,
+      "end": 472.71,
+      "text": "Almost impossibly new.",
+      "scene_description": "A dark starfield with a tiny blue Earth visible in the distance, surrounded by countless stars and cosmic dust. A single small stick figure on Earth's surface gazes upward at the immensity around them, emphasizing their recent and improbable existence."
+    },
+    {
+      "start": 472.91,
+      "end": 475.77,
+      "text": "And the strangest part is that you were never the point of any of it.",
+      "scene_description": "A wide landscape showing geological strata layers, ancient rocks, flowing water, wind-swept terrain, and distant mountains. A single stick-figure character stands in the middle, looking somewhat bewildered, while all the forces of nature swirl around them\u2014implying they're incidental to the larger planetary processes."
+    },
+    {
+      "start": 475.89,
+      "end": 479.63,
+      "text": "You are simply what happened to be left standing when the dust finally settled.",
+      "scene_description": "A scene of cosmic dust and debris gradually settling onto a landscape, with swirling particles in the air fading away. A stick-figure character stands calmly on solid ground in the center, surrounded by dust clouds thinning out, with calm emerging as the particles come to rest around them."
+    }
+  ]
+}
