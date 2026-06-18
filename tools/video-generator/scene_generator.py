@@ -28,14 +28,14 @@ import image_gen
 
 SCENES_CACHE_FILE = "scenes.json"
 
-MODEL = "claude-haiku-4-5-20251001"
+MODEL = "claude-sonnet-4-6"
 
 BATCH_SIZE = 15
 
 # Bump this whenever SYSTEM_PROMPT's output format/content changes meaningfully —
 # it's folded into the cache signature so stale scenes.json entries (planned
 # under an older prompt) are automatically invalidated.
-PROMPT_VERSION = "v6-creative-selective"
+PROMPT_VERSION = "TestV2-sonnet-tighter-split-richer-creative"
 
 SYSTEM_PROMPT = """\
 You are the scene planner for an MS Paint-style YouTube video, in the visual \
@@ -46,31 +46,42 @@ You will be given a list of consecutive sentences from a video's narration, \
 each with a start and end timestamp (in seconds). Your job is to group them \
 into visual "beats" — each beat becomes ONE generated image.
 
-RULES FOR GROUPING — TARGET ~2-4 SECONDS OF NARRATION PER IMAGE:
+RULES FOR GROUPING — TARGET ~2-3 SECONDS OF NARRATION PER IMAGE:
 - The video should feel like it's constantly moving — a new image roughly \
-every 2-4 seconds of narration. A static image held for 5+ seconds while the \
+every 2-3 seconds of narration. A static image held for 4+ seconds while \
 narration keeps going feels dead. Use this as your main guide for how many \
 beats to create.
-- Any sentence (or clause) longer than ~4 seconds MUST be split into multiple \
-beats, even if it describes "one idea" — split it into the natural phrases/ \
-clauses it's made of (e.g. at commas, "and", "but") and give each phrase its \
-own beat with its own scene_description. Each beat should show a slightly \
-different moment, angle, detail, or progression of the same scene — not the \
-exact same image repeated. Example: "The walls around you, the light overhead, \
-the air going in and out of your lungs without you ever thinking about it." \
-→ split into 3 beats (walls/room, the light overhead, the character breathing \
-calmly) — NOT one static room shot.
+- Any sentence (or clause) longer than ~3 seconds MUST be split into multiple \
+beats — split at natural phrases/clauses (commas, "and", "but", "as", "while", \
+"because", "which", "when", "where") and give each phrase its own beat with its \
+own scene_description. Each beat should show a slightly different moment, \
+angle, detail, or progression — not the exact same image repeated.
+  Example: "The walls around you, the light overhead, the air going in and out \
+of your lungs without you ever thinking about it." → 3 beats (walls/room, the \
+light overhead, the character breathing calmly) — NOT one static room shot.
+- COMPOUND SENTENCE RULE — split without waiting for the 3-second threshold: \
+any sentence that contains TWO OR MORE of these connectors — ", and", ", but", \
+", while", ", as", ", because", ", which", ", when", "; " — MUST be split at \
+each connector regardless of duration. These connectors mark a shift in idea \
+even when the sentence is short. Each clause after the split becomes its own \
+beat.
+  Example: "Life was simple then, but everything was about to change." → \
+beat 1: simple life scene, beat 2: a hint of change approaching (two separate \
+images, even though the sentence is only ~3 seconds).
+- SEQUENCE RULE — a sentence describing a series of things (first X, then Y, \
+then Z / X, Y, and Z / one by one) gets one beat per item in the sequence, \
+not one beat for the whole list.
+  Example: "Oceans formed, continents shifted, and the first cells appeared." \
+→ 3 beats — one per event.
 - Very short sentences that don't carry their own visual idea (e.g. "It \
-hasn't.") may be merged into the previous or next beat instead of getting a \
-near-empty image of their own — but don't use this as an excuse to under-split \
-longer sentences elsewhere.
+hasn't.") may be merged into the previous or next beat — but do not use this \
+as an excuse to under-split elsewhere.
 - Watch for sentences that pack TWO distinct ideas into one clause, especially \
 comparisons/contrasts ("X for 99% of the time, but Y", "not A, but B", "while \
-X happened, Y didn't") — these read as one sentence but are visually two \
-different scenes, and should become two beats even if short. Example: "For \
-more than 99% of this planet's existence, nothing remotely like you was here." \
-→ beat 1 shows a long stretch of empty/ancient scenery (the 99%), beat 2 shows \
-a small human figure appearing (the "you" that wasn't there) — two beats, not one.
+X happened, Y didn't") — these become two beats even if short.
+  Example: "For more than 99% of this planet's existence, nothing remotely \
+like you was here." → beat 1: long empty ancient scenery (the 99%), beat 2: \
+a small human figure appearing (the "you" that wasn't there).
 - Split timestamp ranges proportionally by word/phrase length. Every beat's \
 start/end times must come from the input sentence timestamps (or a \
 proportional split of them). Do not invent new times.
@@ -133,8 +144,15 @@ something that sounds like one thing but means another
 
 If the beat does NOT meet any of these criteria (it is a transition, a simple \
 physical action, a factual setup sentence, a connecting phrase) — describe it \
-LITERALLY, exactly as v5 does. Do not force creativity where it has not been \
-earned.
+LITERALLY. Do not force creativity where it has not been earned.
+
+ONE MORE TEST before defaulting to literal: ask yourself "is there a single \
+tiny specific detail in this sentence that, if zoomed into, would be more \
+powerful than the wide shot?" If yes — zoom in on that detail instead of \
+drawing the full scene. A close-up of one thing often beats a medium shot of \
+everything. Example: "Humans started writing things down" → instead of a \
+wide scribe-at-a-desk scene, zoom into just two stick-figure hands pressing a \
+wedge into a clay tablet. The detail makes it real.
 
 If the beat EARNS IT, pick exactly ONE of these four techniques:
 

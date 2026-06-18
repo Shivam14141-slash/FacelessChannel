@@ -7,10 +7,23 @@
 
 ## Where We Left Off
 
-`scene_generator.py` and `image_gen.py` are on **v6-creative-selective** — the best version to date, user approved.
-The `scenes.json` cache at `tools/video-generator/Testing/output/scenes.json` contains the **v6 168-beat plan** and is valid.
+### Baseline (safe, locked)
+`scene_generator.py` is on **v6-creative-selective** — committed at `8b2a8fb`.
+`Testing/output/` contains the v6 168-beat run (images + video). **Do not touch this folder.**
+To roll back: `git checkout 8b2a8fb -- tools/video-generator/scene_generator.py`
 
-**Next action:** Pipeline is complete. Video is at `Testing/output/video-raw.mp4`. Ready for review, polish, or ep01 production run.
+### Active experiment
+`scene_generator.py` is now on **TestV1** (`PROMPT_VERSION = "TestV1-tighter-split-richer-creative"`).
+All TestV1 output goes to `Testing/output_test/` — completely separate from baseline.
+
+**Next action — run TestV1:**
+```bash
+source ~/.zshrc && cd tools/video-generator && python3 main.py \
+  --srt "Testing/What Did Earth Look Like Before Humans.srt" \
+  --audio "Testing/What Did Earth Look Like Before Humans_.mp3" \
+  --out-dir Testing/output_test \
+  --no-review
+```
 
 ---
 
