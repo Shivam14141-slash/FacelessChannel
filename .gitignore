@@ -3,3 +3,18 @@ __pycache__/
 *.pyc
 .env
 .claude/settings.local.json
+
+# Generated video/audio — never commit these
+*.mp4
+*.wav
+*.mp3
+
+# Generated images and pipeline output folders
+tools/video-generator/Testing/output*/
+videos/*/output/
+videos/*/Batch_Audio_Enhance/
+
+# Pipeline cache and temp files
+scenes.json
+concat.txt
+subtitles.srt
