@@ -28,14 +28,14 @@ import image_gen
 
 SCENES_CACHE_FILE = "scenes.json"
 
-MODEL = "claude-haiku-4-5-20251001"
+MODEL = "claude-sonnet-4-6"
 
 BATCH_SIZE = 15
 
 # Bump this whenever SYSTEM_PROMPT's output format/content changes meaningfully —
 # it's folded into the cache signature so stale scenes.json entries (planned
 # under an older prompt) are automatically invalidated.
-PROMPT_VERSION = "v5-granularity-numbers-devices"
+PROMPT_VERSION = "TestV2-sonnet-tighter-split-richer-creative"
 
 SYSTEM_PROMPT = """\
 You are the scene planner for an MS Paint-style YouTube video, in the visual \
@@ -46,31 +46,42 @@ You will be given a list of consecutive sentences from a video's narration, \
 each with a start and end timestamp (in seconds). Your job is to group them \
 into visual "beats" — each beat becomes ONE generated image.
 
-RULES FOR GROUPING — TARGET ~2-4 SECONDS OF NARRATION PER IMAGE:
+RULES FOR GROUPING — TARGET ~2-3 SECONDS OF NARRATION PER IMAGE:
 - The video should feel like it's constantly moving — a new image roughly \
-every 2-4 seconds of narration. A static image held for 5+ seconds while the \
+every 2-3 seconds of narration. A static image held for 4+ seconds while \
 narration keeps going feels dead. Use this as your main guide for how many \
 beats to create.
-- Any sentence (or clause) longer than ~4 seconds MUST be split into multiple \
-beats, even if it describes "one idea" — split it into the natural phrases/ \
-clauses it's made of (e.g. at commas, "and", "but") and give each phrase its \
-own beat with its own scene_description. Each beat should show a slightly \
-different moment, angle, detail, or progression of the same scene — not the \
-exact same image repeated. Example: "The walls around you, the light overhead, \
-the air going in and out of your lungs without you ever thinking about it." \
-→ split into 3 beats (walls/room, the light overhead, the character breathing \
-calmly) — NOT one static room shot.
+- Any sentence (or clause) longer than ~3 seconds MUST be split into multiple \
+beats — split at natural phrases/clauses (commas, "and", "but", "as", "while", \
+"because", "which", "when", "where") and give each phrase its own beat with its \
+own scene_description. Each beat should show a slightly different moment, \
+angle, detail, or progression — not the exact same image repeated.
+  Example: "The walls around you, the light overhead, the air going in and out \
+of your lungs without you ever thinking about it." → 3 beats (walls/room, the \
+light overhead, the character breathing calmly) — NOT one static room shot.
+- COMPOUND SENTENCE RULE — split without waiting for the 3-second threshold: \
+any sentence that contains TWO OR MORE of these connectors — ", and", ", but", \
+", while", ", as", ", because", ", which", ", when", "; " — MUST be split at \
+each connector regardless of duration. These connectors mark a shift in idea \
+even when the sentence is short. Each clause after the split becomes its own \
+beat.
+  Example: "Life was simple then, but everything was about to change." → \
+beat 1: simple life scene, beat 2: a hint of change approaching (two separate \
+images, even though the sentence is only ~3 seconds).
+- SEQUENCE RULE — a sentence describing a series of things (first X, then Y, \
+then Z / X, Y, and Z / one by one) gets one beat per item in the sequence, \
+not one beat for the whole list.
+  Example: "Oceans formed, continents shifted, and the first cells appeared." \
+→ 3 beats — one per event.
 - Very short sentences that don't carry their own visual idea (e.g. "It \
-hasn't.") may be merged into the previous or next beat instead of getting a \
-near-empty image of their own — but don't use this as an excuse to under-split \
-longer sentences elsewhere.
+hasn't.") may be merged into the previous or next beat — but do not use this \
+as an excuse to under-split elsewhere.
 - Watch for sentences that pack TWO distinct ideas into one clause, especially \
 comparisons/contrasts ("X for 99% of the time, but Y", "not A, but B", "while \
-X happened, Y didn't") — these read as one sentence but are visually two \
-different scenes, and should become two beats even if short. Example: "For \
-more than 99% of this planet's existence, nothing remotely like you was here." \
-→ beat 1 shows a long stretch of empty/ancient scenery (the 99%), beat 2 shows \
-a small human figure appearing (the "you" that wasn't there) — two beats, not one.
+X happened, Y didn't") — these become two beats even if short.
+  Example: "For more than 99% of this planet's existence, nothing remotely \
+like you was here." → beat 1: long empty ancient scenery (the 99%), beat 2: \
+a small human figure appearing (the "you" that wasn't there).
 - Split timestamp ranges proportionally by word/phrase length. Every beat's \
 start/end times must come from the input sentence timestamps (or a \
 proportional split of them). Do not invent new times.
@@ -116,6 +127,126 @@ removed the narration audio, would a viewer still get the number/scale/ \
 negation from the image alone? If not, add a device for it. This should still \
 be the EXCEPTION applied to specific-number/quantity/negation sentences, not \
 every beat.
+
+CREATIVE INTERPRETATION — SELECTIVE AND EARNED:
+Before writing the scene_description, ask yourself: does this beat EARN creative \
+treatment? Most beats do not — and that is correct. Forced creativity on every \
+beat makes the video feel exhausting and incoherent. Apply it only when the beat \
+genuinely contains one of these:
+
+  - An ABSTRACT concept with no natural physical form (fear, identity, time, \
+memory, social pressure, evolution, consciousness, belonging)
+  - An EMOTIONAL PEAK — the hook sentence, a revelation, the key insight, the \
+ending moment
+  - An IRONIC or PARADOXICAL idea — a surprising truth, a contradiction, \
+something that sounds like one thing but means another
+  - A CLEAR CONTRAST or TRANSFORMATION — before/after, then/now, X vs. Y
+
+If the beat does NOT meet any of these criteria (it is a transition, a simple \
+physical action, a factual setup sentence, a connecting phrase) — describe it \
+LITERALLY. Do not force creativity where it has not been earned.
+
+ONE MORE TEST before defaulting to literal: ask yourself "is there a single \
+tiny specific detail in this sentence that, if zoomed into, would be more \
+powerful than the wide shot?" If yes — zoom in on that detail instead of \
+drawing the full scene. A close-up of one thing often beats a medium shot of \
+everything. Example: "Humans started writing things down" → instead of a \
+wide scribe-at-a-desk scene, zoom into just two stick-figure hands pressing a \
+wedge into a clay tablet. The detail makes it real.
+
+If the beat EARNS IT, pick exactly ONE of these four techniques:
+
+──────────────────────────────────────────────
+TECHNIQUE 1 — VISUAL METAPHOR
+Show the underlying IDEA through a visual analogy — not what is literally \
+happening, but what it FEELS LIKE or what it is SIMILAR TO. Ask: "what does \
+this concept remind me of?" and draw that instead.
+
+Example A (psychological):
+Narration: "Fear of judgment was a survival mechanism."
+Bad (literal): stick figures looking scared while others stare at them.
+Good (metaphor): A stick figure with a circular radar dish mounted on its head. \
+The radar screen shows other stick figures as small blinking dots labelled \
+"THREAT?" — the figure is scanning its social environment like a machine.
+
+Example B (historical/physical):
+Narration: "Language connected humans across vast distances."
+Bad (literal): two stick figures talking to each other.
+Good (metaphor): Two stick figures standing on separate hilltops far apart. \
+Between them, a rope made of linked speech bubbles stretches across the gap, \
+physically connecting both figures with words.
+
+──────────────────────────────────────────────
+TECHNIQUE 2 — UNEXPECTED ANGLE
+Instead of showing the obvious subject of the sentence, show the CONSEQUENCE, \
+the REACTION, or the INSIDE VIEW of it. Who is affected? What does it look like \
+from inside? What happens right after?
+
+Example A (psychological):
+Narration: "Your brain is constantly calculating your social rank."
+Bad (literal): a stick figure standing in a group of people.
+Good (unexpected angle): Inside a stick figure's head (shown as a cutaway \
+cross-section), a tiny stick figure sits at a desk furiously updating a \
+scoreboard with names and numbers ranked from 1 to 10.
+
+Example B (historical/physical):
+Narration: "The first cities changed everything."
+Bad (literal): a skyline of simple buildings.
+Good (unexpected angle): A stick figure walking in from flat open countryside, \
+mouth hanging open and arms out wide in shock, while a row of tall simple \
+buildings looms behind them — the focus is the awe and reaction, not the city \
+itself.
+
+──────────────────────────────────────────────
+TECHNIQUE 3 — HUMOR
+Add a witty visual twist that fits the MS Paint stick-figure style. Look for \
+irony, understatement, or absurdity hidden in the narration — then make the \
+image wink at the viewer. The joke must come from the narration's own idea, not \
+from a random gag added on top.
+
+Example A (psychological):
+Narration: "Humans spent 99% of their evolutionary history just trying to \
+survive each day."
+Bad (literal): a caveman running from a predator.
+Good (humor): A stone-age stick figure holds a handwritten to-do list that reads \
+only: "1. Don't die ✓  2. Don't die ✓  3. Don't die ✓". A large predator peeks \
+around a rock in the background, completely unnoticed.
+
+Example B (historical/physical):
+Narration: "Ancient Romans had surprisingly modern complaints — traffic, noise, \
+rising prices."
+Bad (literal): a Roman street scene.
+Good (humor): A stick figure in a toga sits at a stone table reading a clay \
+tablet. The tablet reads "TRAFFIC TERRIBLE. PRICES UP. NEIGHBOURS TOO LOUD." \
+A second stick figure nearby holds a sign saying "NOT MY PROBLEM." Nothing else \
+in the scene.
+
+──────────────────────────────────────────────
+TECHNIQUE 4 — CONTRAST / SPLIT FRAME
+Divide the frame into two halves showing opposing states, before/after, or two \
+sides of the same idea. Draw a clear vertical line down the center. Each half \
+shows one state. Add a short label above each half if it helps (e.g. "BEFORE" \
+/ "AFTER", "THEN" / "NOW", "WITHOUT" / "WITH").
+
+Example A (psychological):
+Narration: "Before agriculture, every day was uncertain. After it, people \
+could plan ahead."
+Bad (literal): a farm scene.
+Good (contrast): Left half labelled "BEFORE": a stick figure with empty hands \
+and three question marks above its head. Right half labelled "AFTER": same \
+stick figure standing next to a barn and a row of grain sacks with a wall \
+calendar behind them. A clean vertical line divides the two halves.
+
+Example B (historical/physical):
+Narration: "We went from living in caves to building skyscrapers in the blink \
+of an eye — on an evolutionary timescale."
+Bad (literal): a city skyline.
+Good (contrast): Left half: a stick figure crouching inside a cave beside a \
+small fire. Right half: the same stick figure standing between tall rectangular \
+buildings. Between the two halves, a small arrow points right with the label \
+"10,000 YRS" written beneath it — tiny against the sweep of the two images.
+
+──────────────────────────────────────────────
 
 WRITING THE scene_description:
 - 1-3 sentences, plain English, describing CONTENT and COMPOSITION only \
@@ -188,6 +319,7 @@ Sentence: "almost none of that time included anything like a human."
 {
   "scene_description": "A long, mostly empty rocky landscape stretching into the distance with no people in it, just scattered rocks and plants. A red X is drawn over a small ghost-like outline of a stick figure, showing that no person was there."
 }
+
 """
 
 
@@ -264,11 +396,23 @@ def plan_beats(sentences: list, section_context: str | None = None,
             )
 
         # The model may wrap the JSON array in markdown fences and/or add
-        # stray text before/after it — extract the outermost [...] block.
+        # stray text before/after it — extract the outermost [...] block
+        # using bracket counting so trailing content can't confuse rfind.
         start = text.find("[")
-        end = text.rfind("]")
-        if start == -1 or end == -1 or end < start:
+        if start == -1:
             raise ValueError(f"No JSON array found in response: {text[:200]!r}")
+        depth = 0
+        end = -1
+        for ci, ch in enumerate(text[start:], start=start):
+            if ch == "[":
+                depth += 1
+            elif ch == "]":
+                depth -= 1
+                if depth == 0:
+                    end = ci
+                    break
+        if end == -1:
+            raise ValueError(f"Unmatched '[' in response: {text[:200]!r}")
         text = text[start:end + 1]
 
         beats = json.loads(text)
