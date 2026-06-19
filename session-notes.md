@@ -7,23 +7,21 @@
 
 ## Where We Left Off
 
-### Baseline (safe, locked)
-`scene_generator.py` is on **v6-creative-selective** — committed at `8b2a8fb`.
-`Testing/output/` contains the v6 168-beat run (images + video). **Do not touch this folder.**
-To roll back: `git checkout 8b2a8fb -- tools/video-generator/scene_generator.py`
+### MVP (locked) ✅
+`scene_generator.py` is on **TestV2** — committed at `9892055`.
+`Testing/output_test2/` contains the MVP 164-beat run (images + video).
+To roll back to v6 baseline: `git checkout 8b2a8fb -- tools/video-generator/scene_generator.py`
 
-### Active experiment
-`scene_generator.py` is now on **TestV1** (`PROMPT_VERSION = "TestV1-tighter-split-richer-creative"`).
-All TestV1 output goes to `Testing/output_test/` — completely separate from baseline.
-
-**Next action — run TestV1:**
+**MVP run command:**
 ```bash
 source ~/.zshrc && cd tools/video-generator && python3 main.py \
   --srt "Testing/What Did Earth Look Like Before Humans.srt" \
   --audio "Testing/What Did Earth Look Like Before Humans_.mp3" \
-  --out-dir Testing/output_test \
+  --out-dir Testing/output_test2 \
   --no-review
 ```
+
+**Next action:** Pipeline is production-ready. Use this setup for ep01 with sister's SRT + audio.
 
 ---
 
