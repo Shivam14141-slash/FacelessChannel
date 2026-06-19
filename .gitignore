@@ -11,6 +11,8 @@ __pycache__/
 
 # Generated images and pipeline output folders
 tools/video-generator/Testing/output*/
+tools/video-generator/Testing/reference_frames/
+tools/video-generator/Testing/reference_contact_sheet*.png
 videos/*/output/
 videos/*/Batch_Audio_Enhance/
 
