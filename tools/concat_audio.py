@@ -29,10 +29,17 @@ import tempfile
 
 
 def get_sorted_batches(input_dir: str) -> list:
-    files = glob.glob(os.path.join(input_dir, "batch_*.wav"))
-    files += glob.glob(os.path.join(input_dir, "batch_*.mp3"))
+    """Grabs every audio file in the folder, sorted by name.
+
+    Batch naming varies per episode (e.g. "batch_01.wav" vs "ER2_Batch_01.m4a"),
+    so this doesn't match a fixed prefix — it relies on the input folder being
+    dedicated to one episode's batches, zero-padded so name order == take order.
+    """
+    files = []
+    for ext in ("*.wav", "*.mp3", "*.m4a"):
+        files += glob.glob(os.path.join(input_dir, ext))
     if not files:
-        print(f"No batch_*.wav or batch_*.mp3 files found in: {input_dir}")
+        print(f"No .wav, .mp3, or .m4a files found in: {input_dir}")
         sys.exit(1)
     return sorted(files)
 

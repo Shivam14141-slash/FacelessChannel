@@ -43,28 +43,52 @@ State out loud:
 > "Starting web research for: [TOPIC]. I will only include facts with
 > verified web sources. No knowledge from training data will be used."
 
+### Identify the Topic's Core Qualifier — Do This Before Any Searching
+
+Most video topics are not generic — they're a broad subject narrowed by a
+specific qualifier. Split the topic into both parts before writing a single
+search query:
+
+```
+Core subject:   [the broad category, e.g. "overthinking"]
+Core qualifier: [what makes THIS video specific, e.g. "smart people" / "intelligence"]
+```
+
+**Every search query in every round below must include the qualifier, not
+just the core subject.** Dropping the qualifier and searching the broad
+category alone (e.g. searching "overthinking evolution" instead of
+"intelligence overthinking evolution") will return real, verifiable, properly
+sourced facts — but they'll be facts about the broad category, not the actual
+video. Each individual fact will pass the Source Check below while the
+research document as a whole quietly drifts off-topic. This has happened
+before — watch for it.
+
+If a search genuinely returns nothing useful with the qualifier included,
+that's a signal to rephrase the qualifier (try a synonym) before falling back
+to a broader query — not a license to drop it permanently.
+
 ### Search Strategy — Run ALL of These
 
 **Round 1 — Psychological Science (minimum 4 searches)**
 ```
-"[topic] psychology study [recent year]"
-"[topic] neuroscience research findings"
-"[topic] evolutionary psychology explained"
-"psychology of [topic] peer reviewed"
+"[qualifier] [topic] psychology study [recent year]"
+"[topic] neuroscience research findings [qualifier]"
+"[qualifier] [topic] evolutionary psychology explained"
+"psychology of [topic] in [qualifier] peer reviewed"
 ```
 
 **Round 2 — Evolutionary & Historical Roots (minimum 3 searches)**
 ```
-"[topic] human evolution ancient history"
-"[topic] hunter gatherer tribes anthropology"
-"history of [topic] ancient civilizations"
+"[qualifier] [topic] human evolution ancient history"
+"[qualifier] cognitive trait evolutionary advantage anthropology"
+"history of [qualifier] and [topic] ancient civilizations"
 ```
 
 **Round 3 — Surprising Angles & Statistics (minimum 3 searches)**
 ```
-"[topic] surprising facts statistics"
-"[topic] counterintuitive research"
-"[topic] latest research [current year]"
+"[qualifier] [topic] surprising facts statistics"
+"[qualifier] [topic] counterintuitive research"
+"[qualifier] [topic] latest research [current year]"
 ```
 
 **Round 4 — Deep Dive on Best Sources Found**
@@ -97,6 +121,23 @@ For each fact you plan to include, ask:
 2. Can I provide a URL or specific source name? → If No: REMOVE IT
 3. Is the researcher/author name real and findable? → If No: REMOVE IT
 4. Is the statistic tied to a specific study or survey? → If No: REMOVE IT
+
+### The Topic Fidelity Check (Run This Right After The Source Check, For Every Fact)
+A fact can pass the Source Check (real, verified, well-cited) and still be
+the wrong fact for this document — because it's about the broad subject, not
+the specific topic this video is actually about. For each fact, ask:
+1. Does this fact explicitly involve the topic's core qualifier (e.g.
+   "intelligence" / "smart people"), not just the broad subject (e.g.
+   "anxiety" or "overthinking") on its own? → If No: REMOVE IT or find a
+   source that makes the qualifier-specific connection explicit.
+2. Would this exact fact fit just as well in a research doc for a different
+   video about the broad subject alone (e.g. a generic anxiety video instead
+   of THIS video)? → If Yes: it's off-topic. REMOVE IT.
+3. If summarized in five words, does the qualifier appear or get directly
+   implied? → If No: REMOVE IT.
+A document built entirely from facts that each individually cite a real
+source can still drift off-topic as a whole. This check catches that —
+the Source Check alone does not.
 
 ### Red Flag Phrases — Never Write These
 These phrases signal you are about to hallucinate:
@@ -250,6 +291,9 @@ Total unverified/flagged: [number]
 - [ ] Zero unresolved ⚠️ UNVERIFIED flags
 - [ ] Every fact in Section 6 source log
 - [ ] No red flag phrases ("studies show", "experts say") without names
+- [ ] Every fact passed the Topic Fidelity Check — ties to the topic's full
+      qualifier, not just the broad adjacent subject (re-scan Section 3 and
+      Section 4 specifically; these are where generic drift creeps in)
 
 If any box is unchecked → do more research. Do not pass to Script Engine.
 
@@ -317,5 +361,11 @@ Please enable Tavily MCP before proceeding."
 
 ---
 
-*Skill version: 2.0 — web-enforced, hallucination-hardened*
+*Skill version: 2.1 — web-enforced, hallucination-hardened, topic-fidelity-enforced*
 *Previous version 1.0 deprecated — do not use*
+*v2.1 change: added the Core Qualifier split (Before You Begin), the Topic
+Fidelity Check (Hallucination Prevention Rules), and a matching Quality Gate
+item — added after a real research run drifted off-topic by searching the
+broad subject (e.g. "overthinking") without the topic's qualifier (e.g.
+"smart people"), producing individually well-sourced facts that didn't
+actually belong in that video's document.*

@@ -67,6 +67,9 @@ Replaced `rfind("]")` with bracket-counting to find the exact matching `]` for t
 | v7b | same as v7 | 174 | Fixed seed=42 | Terrible — orange circle in 80% of images |
 | v7b (no seed) | same as v7 | 174 | Removed seed | Still rejected |
 | **v6-creative-selective** | `v6-creative-selective` | **168** | Selective creative techniques (metaphor/angle/humor/contrast) with 2 examples each | **Best version — user approved ✅** |
+| TestV1 | `TestV1-tighter-split-richer-creative` | 159 | Haiku + 3s threshold + compound/sequence rules + zoom/detail test | Decent but Sonnet better |
+| TestV2 | `TestV2-sonnet-tighter-split-richer-creative` | 164 | Switched to Sonnet 4.6 planner | **Current MVP ✅** |
+| TestV3 | `TestV3-overlapping-batches` | 126 | OVERLAP_SIZE=3 — last 3 sentences of previous batch as read-only context | **Rejected — TestV2 was better** |
 
 **Key learnings:**
 - Fixed seed in FLUX = compositional motif bleeds across all images. Never use fixed seed.
